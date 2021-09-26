@@ -1,0 +1,15 @@
+mysql:
+  host: ""
+  port: ""
+  user: ""
+  password: ""
+  databaseName: ""
+  tableName: ""
+  sqlPath: ""
+
+email:
+  user: ""
+  pass: ""
+  host: ""
+  port: ""
+  toemail: ""

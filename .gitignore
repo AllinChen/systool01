@@ -16,4 +16,5 @@
 
 # vscode
 
-*.vscode
+*.vscode\
+*info.yml

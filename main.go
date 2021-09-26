@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/AllinChen/systool01/config"
+)
 
 func main() {
-	fmt.Println("!")
+	fmt.Println(config.GlobalConf.Email)
 }
