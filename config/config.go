@@ -18,11 +18,12 @@ type Config struct {
 		SqlPath      string `yml:"sqlPath"`
 	} `yml:"mysql"`
 	Email struct {
-		User    string `yml:"user"`
-		Pass    string `yml:"pass"`
-		Host    string `yml:"host"`
-		Port    string `yml:"port"`
-		Toemail string `yml:"toemail"`
+		User     string `yml:"user"`
+		Pass     string `yml:"pass"`
+		Host     string `yml:"host"`
+		Port     string `yml:"port"`
+		Toemail  string `yml:"toemail"`
+		Toemail2 string `yaml:"toemail2"`
 	} `yml:"email"`
 }
 

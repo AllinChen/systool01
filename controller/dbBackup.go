@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-// controller.BackupMySqlDb(config.GlobalConf.Email.Host, config.GlobalConf.Email.Port, config.GlobalConf.Email.User, config.GlobalConf.Email.Pass, config.GlobalConf.Email.DatabaseName, config.GlobalConf.Mysql.TableName, config.GlobalConf.Email.SqlPath)
+// controller.BackupMySqlDb(config.GlobalConf.Mysql.Host, config.GlobalConf.Mysql.Port, config.GlobalConf.Mysql.User, config.GlobalConf.Mysql.Pass, config.GlobalConf.Mysql.DatabaseName, config.GlobalConf.Mysql.TableName, config.GlobalConf.Mysql.SqlPath)
 
 /**
  *

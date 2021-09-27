@@ -21,7 +21,7 @@ import (
 func SendMail(mailTo []string, subject string, body string) error {
 	mailConn := map[string]string{
 		"user": config.GlobalConf.Email.User,
-		"pass": config.GlobalConf.Email.Pass,
+		"pass": config.GlobalConf.Email.Pass + "YMQ",
 		"host": config.GlobalConf.Email.Host,
 		"port": config.GlobalConf.Email.Port,
 	}
