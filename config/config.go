@@ -16,6 +16,7 @@ type Config struct {
 		DatabaseName string `yml:"databasename"`
 		TableName    string `yml:"tablename"`
 		SqlPath      string `yml:"sqlpath"`
+		DBName       string `yml:"dbname"`
 	} //`yml:"mysql"`
 	Email struct {
 		User     string `yml:"user"`
