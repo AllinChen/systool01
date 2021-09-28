@@ -18,3 +18,4 @@
 
 *.vscode\
 *info.yml
+*_debug_bin

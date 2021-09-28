@@ -13,10 +13,10 @@ type Config struct {
 		Port         string `yml:"port"`
 		User         string `yml:"user"`
 		Pass         string `yml:"pass"`
-		DatabaseName string `yml:"databaseName"`
-		TableName    string `yml:"tableName"`
-		SqlPath      string `yml:"sqlPath"`
-	} `yml:"mysql"`
+		DatabaseName string `yml:"databasename"`
+		TableName    string `yml:"tablename"`
+		SqlPath      string `yml:"sqlpath"`
+	} //`yml:"mysql"`
 	Email struct {
 		User     string `yml:"user"`
 		Pass     string `yml:"pass"`
@@ -24,7 +24,7 @@ type Config struct {
 		Port     string `yml:"port"`
 		Toemail  string `yml:"toemail"`
 		Toemail2 string `yaml:"toemail2"`
-	} `yml:"email"`
+	} //`yml:"email"`
 }
 
 var GlobalConf Config
