@@ -6,6 +6,7 @@ mysql:
   databaseName: ""
   tableName: ""
   sqlPath: ""
+  dbname: ""
 
 email:
   user: ""
