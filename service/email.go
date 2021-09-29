@@ -18,14 +18,19 @@ func SendMail() error {
 	//邮件主题为"Hello"
 	subject := "每日运行统计"
 	// 邮件正文
-	body := fmt.Sprintln(time.Now().Date()) + "<br>" + MakeSysInfoMail()
+	body := fmt.Sprintln(time.Now().Date()) + "<br>" + BKBK() + MakeSysInfoMail()
 	fmt.Println(body)
 	return controller.SendMail(mailTo, subject, body)
 }
 
 func MakeSysInfoMail() (ms string) {
+
 	_, ms = controller.GetSysRunInfo()
 	ms = strings.Replace(ms, "\n", "<br>", -1)
+	ms += "<br>"
+	for _, m := range GetInfo() {
 
+		ms += fmt.Sprintln(m) + "<br>"
+	}
 	return
 }

@@ -15,3 +15,12 @@ func RecordInfo() error {
 	}
 	return nil
 }
+
+func GetInfo() (si []dao.Sysinfo) {
+
+	dao.InitDB()
+	var SI dao.SysInfoImpl
+	si = SI.GetOneDayInfo()
+	return si
+
+}

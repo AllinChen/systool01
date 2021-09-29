@@ -1,6 +1,8 @@
 package dao
 
 import (
+	"time"
+
 	"github.com/AllinChen/systool01/controller"
 )
 
@@ -21,7 +23,7 @@ type Sysinfo struct {
 	Net_Recv int64 `gorm:"column:net_recv`
 	Net_Send int64 `gorm:"column:net_send`
 
-	// Last_Modify_Date time.Time `gorm:"column:last_modify_date`
+	Last_Modify_Date time.Time `gorm:"column:last_modify_date`
 }
 
 func ConvertSysType(oldI controller.Info) (newI Sysinfo) {
@@ -39,6 +41,8 @@ func ConvertSysType(oldI controller.Info) (newI Sysinfo) {
 
 	newI.Net_Recv = int64(oldI.NET.Recv)
 	newI.Net_Send = int64(oldI.NET.Send)
+	newI.Last_Modify_Date = time.Now()
+	// fmt.Println(time.Now())
 
 	return
 }

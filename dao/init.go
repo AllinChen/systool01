@@ -18,7 +18,7 @@ func GetDB() *gorm.DB {
 
 func InitDB() {
 	port, _ := strconv.Atoi(config.GlobalConf.Mysql.Port)
-	conn := fmt.Sprintf("%s:%s@(%s:%d)/%s?charset=utf8mb4", config.GlobalConf.Mysql.User,
+	conn := fmt.Sprintf("%s:%s@(%s:%d)/%s?charset=utf8mb4&loc=Local&parseTime=true", config.GlobalConf.Mysql.User,
 		config.GlobalConf.Mysql.Pass, config.GlobalConf.Mysql.Host, port, config.GlobalConf.Mysql.DBName)
 
 	var err error
